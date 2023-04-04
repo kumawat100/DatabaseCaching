@@ -3,6 +3,7 @@ package com.pratik.springboot.rest.controller;
 import com.pratik.springboot.rest.entity.ProductEntity;
 import com.pratik.springboot.rest.repository.ProductRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,6 +25,7 @@ public class ProductRestController {
     }
 
     @GetMapping("/products/{id}")
+    @Cacheable("product-cache")
     public ProductEntity getProductById(@PathVariable("id") int id) {
         LOGGER.info("Finding product by ID" + id);
         return repo.findById(id).get();

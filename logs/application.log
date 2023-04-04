@@ -355,3 +355,218 @@ java.util.NoSuchElementException: No value present
 2023-03-30 12:49:51.521  INFO 28436 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
 2023-03-30 12:49:51.528  INFO 28436 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-03-30 12:49:51.531  INFO 28436 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-04 09:51:49.909  INFO 4668 --- [main] c.p.springboot.rest.RestApplication      : Starting RestApplication using Java 11.0.3 on LTIN324482 with PID 4668 (C:\Users\674785\Downloads\SBProfile\DatabaseCaching\target\classes started by 674785 in C:\Users\674785\Downloads\SBProfile\DatabaseCaching)
+2023-04-04 09:51:49.914 DEBUG 4668 --- [main] c.p.springboot.rest.RestApplication      : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-04 09:51:49.915  INFO 4668 --- [main] c.p.springboot.rest.RestApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-04 09:51:53.180  INFO 4668 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-04 09:51:53.181  INFO 4668 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-04 09:51:53.685  INFO 4668 --- [main] o.a.c.c.C.[.[localhost].[/pratik]        : Initializing Spring embedded WebApplicationContext
+2023-04-04 09:51:54.126  WARN 4668 --- [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2023-04-04 09:51:54.546  INFO 4668 --- [main] com.hazelcast.system.logo                : [192.168.1.7]:5701 [dev] [5.1.5] 
+	+       +  o    o     o     o---o o----o o      o---o     o     o----o o--o--o
+	+ +   + +  |    |    / \       /  |      |     /         / \    |         |   
+	+ + + + +  o----o   o   o     o   o----o |    o         o   o   o----o    |   
+	+ +   + +  |    |  /     \   /    |      |     \       /     \       |    |   
+	+       +  o    o o       o o---o o----o o----o o---o o       o o----o    o   
+2023-04-04 09:51:54.547  INFO 4668 --- [main] com.hazelcast.system                     : [192.168.1.7]:5701 [dev] [5.1.5] Copyright (c) 2008-2022, Hazelcast, Inc. All Rights Reserved.
+2023-04-04 09:51:54.547  INFO 4668 --- [main] com.hazelcast.system                     : [192.168.1.7]:5701 [dev] [5.1.5] Hazelcast Platform 5.1.5 (20221114 - c52d6ff) starting at [192.168.1.7]:5701
+2023-04-04 09:51:54.548  INFO 4668 --- [main] com.hazelcast.system                     : [192.168.1.7]:5701 [dev] [5.1.5] Cluster name: dev
+2023-04-04 09:51:54.548  INFO 4668 --- [main] com.hazelcast.system                     : [192.168.1.7]:5701 [dev] [5.1.5] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed.
+To enable integrity checker do one of the following: 
+  - Change member config using Java API: config.setIntegrityCheckerEnabled(true);
+  - Change XML/YAML configuration property: Set hazelcast.integrity-checker.enabled to true
+  - Add system property: -Dhz.integritychecker.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_INTEGRITYCHECKER_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2023-04-04 09:51:54.552  INFO 4668 --- [main] com.hazelcast.system                     : [192.168.1.7]:5701 [dev] [5.1.5] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2023-04-04 09:51:56.265  INFO 4668 --- [main] com.hazelcast.system.security            : [192.168.1.7]:5701 [dev] [5.1.5] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2023-04-04 09:51:56.673  INFO 4668 --- [main] com.hazelcast.instance.impl.Node         : [192.168.1.7]:5701 [dev] [5.1.5] Using Multicast discovery
+2023-04-04 09:51:56.678  WARN 4668 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.1.7]:5701 [dev] [5.1.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2023-04-04 09:51:57.068  INFO 4668 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.7]:5701 [dev] [5.1.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2023-04-04 09:51:57.077  INFO 4668 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.7]:5701 [dev] [5.1.5] [192.168.1.7]:5701 is STARTING
+2023-04-04 09:51:59.703  INFO 4668 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.7]:5701 [dev] [5.1.5] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.7]:5701 - 227905ca-0ea8-4b46-9aa9-0d805076ab08 this
+]
+
+2023-04-04 09:51:59.721  INFO 4668 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.7]:5701 [dev] [5.1.5] [192.168.1.7]:5701 is STARTED
+2023-04-04 09:51:59.901  INFO 4668 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-04 09:52:00.396  INFO 4668 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-04 09:52:00.503  INFO 4668 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-04 09:52:00.643  INFO 4668 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-04 09:52:00.947  INFO 4668 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-04 09:52:01.181  INFO 4668 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-04-04 09:52:01.929  INFO 4668 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-04 09:52:03.405  INFO 4668 --- [main] c.p.springboot.rest.RestApplication      : Started RestApplication in 14.364 seconds (JVM running for 15.246)
+2023-04-04 09:55:07.580  INFO 4668 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/pratik]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-04 09:57:32.511  INFO 7196 --- [main] c.p.s.rest.RestApplicationTests          : Starting RestApplicationTests using Java 11.0.3 on LTIN324482 with PID 7196 (started by 674785 in C:\Users\674785\Downloads\SBProfile\DatabaseCaching)
+2023-04-04 09:57:32.512 DEBUG 7196 --- [main] c.p.s.rest.RestApplicationTests          : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-04 09:57:32.513  INFO 7196 --- [main] c.p.s.rest.RestApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2023-04-04 09:57:34.935  WARN 7196 --- [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2023-04-04 09:57:35.392  INFO 7196 --- [main] com.hazelcast.system.logo                : [192.168.1.7]:5702 [dev] [5.1.5] 
+	+       +  o    o     o     o---o o----o o      o---o     o     o----o o--o--o
+	+ +   + +  |    |    / \       /  |      |     /         / \    |         |   
+	+ + + + +  o----o   o   o     o   o----o |    o         o   o   o----o    |   
+	+ +   + +  |    |  /     \   /    |      |     \       /     \       |    |   
+	+       +  o    o o       o o---o o----o o----o o---o o       o o----o    o   
+2023-04-04 09:57:35.392  INFO 7196 --- [main] com.hazelcast.system                     : [192.168.1.7]:5702 [dev] [5.1.5] Copyright (c) 2008-2022, Hazelcast, Inc. All Rights Reserved.
+2023-04-04 09:57:35.393  INFO 7196 --- [main] com.hazelcast.system                     : [192.168.1.7]:5702 [dev] [5.1.5] Hazelcast Platform 5.1.5 (20221114 - c52d6ff) starting at [192.168.1.7]:5702
+2023-04-04 09:57:35.393  INFO 7196 --- [main] com.hazelcast.system                     : [192.168.1.7]:5702 [dev] [5.1.5] Cluster name: dev
+2023-04-04 09:57:35.394  INFO 7196 --- [main] com.hazelcast.system                     : [192.168.1.7]:5702 [dev] [5.1.5] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed.
+To enable integrity checker do one of the following: 
+  - Change member config using Java API: config.setIntegrityCheckerEnabled(true);
+  - Change XML/YAML configuration property: Set hazelcast.integrity-checker.enabled to true
+  - Add system property: -Dhz.integritychecker.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_INTEGRITYCHECKER_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2023-04-04 09:57:35.400  INFO 7196 --- [main] com.hazelcast.system                     : [192.168.1.7]:5702 [dev] [5.1.5] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2023-04-04 09:57:37.134  INFO 7196 --- [main] com.hazelcast.system.security            : [192.168.1.7]:5702 [dev] [5.1.5] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2023-04-04 09:57:37.622  INFO 7196 --- [main] com.hazelcast.instance.impl.Node         : [192.168.1.7]:5702 [dev] [5.1.5] Using Multicast discovery
+2023-04-04 09:57:37.627  WARN 7196 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.1.7]:5702 [dev] [5.1.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2023-04-04 09:57:38.019  INFO 7196 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.7]:5702 [dev] [5.1.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2023-04-04 09:57:38.028  INFO 7196 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.7]:5702 [dev] [5.1.5] [192.168.1.7]:5702 is STARTING
+2023-04-04 09:57:38.427  INFO 7196 --- [main] c.h.i.cluster.impl.MulticastJoiner       : [192.168.1.7]:5702 [dev] [5.1.5] Trying to join to discovered node: [192.168.1.7]:5701
+2023-04-04 09:57:38.543  INFO 4668 --- [hz.hazelcast-instance.IO.thread-in-0] c.h.i.server.tcp.TcpServerConnection     : [192.168.1.7]:5701 [dev] [5.1.5] Initialized new cluster connection between /192.168.1.7:5701 and /192.168.1.7:61879
+2023-04-04 09:57:38.555  INFO 7196 --- [hz.hazelcast-instance.IO.thread-in-0] c.h.i.server.tcp.TcpServerConnection     : [192.168.1.7]:5702 [dev] [5.1.5] Initialized new cluster connection between /192.168.1.7:61879 and /192.168.1.7:5701
+2023-04-04 09:57:43.826  INFO 4668 --- [hz.hazelcast-instance.priority-generic-operation.thread-0] c.h.internal.cluster.ClusterService      : [192.168.1.7]:5701 [dev] [5.1.5] 
+
+Members {size:2, ver:2} [
+	Member [192.168.1.7]:5701 - 227905ca-0ea8-4b46-9aa9-0d805076ab08 this
+	Member [192.168.1.7]:5702 - b3316e08-9c10-4df9-b9e8-f0d267992811
+]
+
+2023-04-04 09:57:43.852  INFO 7196 --- [hz.hazelcast-instance.priority-generic-operation.thread-0] c.h.internal.cluster.ClusterService      : [192.168.1.7]:5702 [dev] [5.1.5] 
+
+Members {size:2, ver:2} [
+	Member [192.168.1.7]:5701 - 227905ca-0ea8-4b46-9aa9-0d805076ab08
+	Member [192.168.1.7]:5702 - b3316e08-9c10-4df9-b9e8-f0d267992811 this
+]
+
+2023-04-04 09:57:43.889  INFO 7196 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.7]:5702 [dev] [5.1.5] [192.168.1.7]:5702 is STARTED
+2023-04-04 09:57:44.430  INFO 7196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-04 09:57:45.045  INFO 7196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-04 09:57:45.217  INFO 7196 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-04 09:57:45.380  INFO 7196 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-04 09:57:45.786  INFO 7196 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-04 09:57:46.110  INFO 7196 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-04-04 09:57:47.228  INFO 7196 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-04 09:57:50.378  INFO 7196 --- [main] c.p.s.rest.RestApplicationTests          : Started RestApplicationTests in 18.345 seconds (JVM running for 20.045)
+2023-04-04 09:57:50.904  INFO 4668 --- [http-nio-8080-exec-10] c.h.i.p.impl.PartitionStateManager       : [192.168.1.7]:5701 [dev] [5.1.5] Initializing cluster partition table arrangement...
+2023-04-04 09:57:51.008  INFO 4668 --- [http-nio-8080-exec-10] c.p.s.r.c.ProductRestController          : Finding product by ID1
+2023-04-04 09:57:51.240  INFO 7196 --- [hz.ShutdownThread] com.hazelcast.instance.impl.Node         : [192.168.1.7]:5702 [dev] [5.1.5] Running shutdown hook... Current state: ACTIVE
+2023-04-04 09:57:51.249  INFO 7196 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-04-04 09:57:51.251  INFO 4668 --- [hz.hazelcast-instance.IO.thread-in-0] c.h.i.server.tcp.TcpServerConnection     : [192.168.1.7]:5701 [dev] [5.1.5] Connection[id=1, /192.168.1.7:5701->/192.168.1.7:61879, qualifier=null, endpoint=[192.168.1.7]:5702, remoteUuid=b3316e08-9c10-4df9-b9e8-f0d267992811, alive=false, connectionType=MEMBER, planeIndex=0] closed. Reason: Connection closed by the other side
+2023-04-04 09:57:51.259  INFO 7196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-04 09:57:51.262  INFO 4668 --- [hz.hazelcast-instance.cached.thread-5] c.h.i.server.tcp.TcpServerConnector      : [192.168.1.7]:5701 [dev] [5.1.5] Connecting to /192.168.1.7:5702, timeout: 10000, bind-any: true
+2023-04-04 09:57:51.265  INFO 7196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-04 09:57:53.291  INFO 4668 --- [hz.hazelcast-instance.cached.thread-5] c.h.i.server.tcp.TcpServerConnector      : [192.168.1.7]:5701 [dev] [5.1.5] Could not connect to: /192.168.1.7:5702. Reason: IOException[Connection refused: no further information to address /192.168.1.7:5702]
+2023-04-04 09:57:53.403  INFO 4668 --- [hz.hazelcast-instance.cached.thread-5] c.h.i.server.tcp.TcpServerConnector      : [192.168.1.7]:5701 [dev] [5.1.5] Connecting to /192.168.1.7:5702, timeout: 10000, bind-any: true
+2023-04-04 09:57:55.422  INFO 4668 --- [hz.hazelcast-instance.cached.thread-5] c.h.i.server.tcp.TcpServerConnector      : [192.168.1.7]:5701 [dev] [5.1.5] Could not connect to: /192.168.1.7:5702. Reason: IOException[Connection refused: no further information to address /192.168.1.7:5702]
+2023-04-04 09:57:55.534  INFO 4668 --- [hz.hazelcast-instance.cached.thread-5] c.h.i.server.tcp.TcpServerConnector      : [192.168.1.7]:5701 [dev] [5.1.5] Connecting to /192.168.1.7:5702, timeout: 10000, bind-any: true
+2023-04-04 09:57:57.580  INFO 4668 --- [hz.hazelcast-instance.cached.thread-5] c.h.i.server.tcp.TcpServerConnector      : [192.168.1.7]:5701 [dev] [5.1.5] Could not connect to: /192.168.1.7:5702. Reason: IOException[Connection refused: no further information to address /192.168.1.7:5702]
+2023-04-04 09:57:57.583  WARN 4668 --- [hz.hazelcast-instance.cached.thread-5] .h.i.s.t.TcpServerConnectionErrorHandler : [192.168.1.7]:5701 [dev] [5.1.5] Removing connection to endpoint [192.168.1.7]:5702 Cause => java.io.IOException {Connection refused: no further information to address /192.168.1.7:5702}, Error-Count: 5
+2023-04-04 09:57:57.586  INFO 4668 --- [hz.hazelcast-instance.cached.thread-5] c.h.i.cluster.impl.MembershipManager     : [192.168.1.7]:5701 [dev] [5.1.5] Removing Member [192.168.1.7]:5702 - b3316e08-9c10-4df9-b9e8-f0d267992811
+2023-04-04 09:57:57.590  INFO 4668 --- [hz.hazelcast-instance.cached.thread-5] c.h.i.p.impl.PartitionStateManager       : [192.168.1.7]:5701 [dev] [5.1.5] Storing snapshot of partition assignments while removing UUID b3316e08-9c10-4df9-b9e8-f0d267992811
+2023-04-04 09:57:57.595  INFO 4668 --- [hz.hazelcast-instance.cached.thread-5] c.h.internal.cluster.ClusterService      : [192.168.1.7]:5701 [dev] [5.1.5] 
+
+Members {size:1, ver:3} [
+	Member [192.168.1.7]:5701 - 227905ca-0ea8-4b46-9aa9-0d805076ab08 this
+]
+
+2023-04-04 09:57:57.648  INFO 4668 --- [hz.hazelcast-instance.cached.thread-1] c.h.t.TransactionManagerService          : [192.168.1.7]:5701 [dev] [5.1.5] Committing/rolling-back live transactions of [192.168.1.7]:5702, UUID: b3316e08-9c10-4df9-b9e8-f0d267992811
+2023-04-04 09:57:57.696  INFO 4668 --- [hz.hazelcast-instance.migration] c.h.i.partition.impl.MigrationManager    : [192.168.1.7]:5701 [dev] [5.1.5] Partition balance is ok, no need to repartition.
+2023-04-04 09:59:23.284  INFO 12268 --- [main] c.p.s.rest.RestApplicationTests          : Starting RestApplicationTests using Java 11.0.3 on LTIN324482 with PID 12268 (started by 674785 in C:\Users\674785\Downloads\SBProfile\DatabaseCaching)
+2023-04-04 09:59:23.286 DEBUG 12268 --- [main] c.p.s.rest.RestApplicationTests          : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-04 09:59:23.288  INFO 12268 --- [main] c.p.s.rest.RestApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2023-04-04 09:59:25.658  WARN 12268 --- [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2023-04-04 09:59:26.098  INFO 12268 --- [main] com.hazelcast.system.logo                : [192.168.1.7]:5702 [dev] [5.1.5] 
+	+       +  o    o     o     o---o o----o o      o---o     o     o----o o--o--o
+	+ +   + +  |    |    / \       /  |      |     /         / \    |         |   
+	+ + + + +  o----o   o   o     o   o----o |    o         o   o   o----o    |   
+	+ +   + +  |    |  /     \   /    |      |     \       /     \       |    |   
+	+       +  o    o o       o o---o o----o o----o o---o o       o o----o    o   
+2023-04-04 09:59:26.098  INFO 12268 --- [main] com.hazelcast.system                     : [192.168.1.7]:5702 [dev] [5.1.5] Copyright (c) 2008-2022, Hazelcast, Inc. All Rights Reserved.
+2023-04-04 09:59:26.099  INFO 12268 --- [main] com.hazelcast.system                     : [192.168.1.7]:5702 [dev] [5.1.5] Hazelcast Platform 5.1.5 (20221114 - c52d6ff) starting at [192.168.1.7]:5702
+2023-04-04 09:59:26.099  INFO 12268 --- [main] com.hazelcast.system                     : [192.168.1.7]:5702 [dev] [5.1.5] Cluster name: dev
+2023-04-04 09:59:26.100  INFO 12268 --- [main] com.hazelcast.system                     : [192.168.1.7]:5702 [dev] [5.1.5] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed.
+To enable integrity checker do one of the following: 
+  - Change member config using Java API: config.setIntegrityCheckerEnabled(true);
+  - Change XML/YAML configuration property: Set hazelcast.integrity-checker.enabled to true
+  - Add system property: -Dhz.integritychecker.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_INTEGRITYCHECKER_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2023-04-04 09:59:26.108  INFO 12268 --- [main] com.hazelcast.system                     : [192.168.1.7]:5702 [dev] [5.1.5] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2023-04-04 09:59:28.155  INFO 12268 --- [main] com.hazelcast.system.security            : [192.168.1.7]:5702 [dev] [5.1.5] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2023-04-04 09:59:28.509  INFO 12268 --- [main] com.hazelcast.instance.impl.Node         : [192.168.1.7]:5702 [dev] [5.1.5] Using Multicast discovery
+2023-04-04 09:59:28.515  WARN 12268 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.1.7]:5702 [dev] [5.1.5] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2023-04-04 09:59:28.978  INFO 12268 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.7]:5702 [dev] [5.1.5] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2023-04-04 09:59:28.990  INFO 12268 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.7]:5702 [dev] [5.1.5] [192.168.1.7]:5702 is STARTING
+2023-04-04 09:59:29.352  INFO 12268 --- [main] c.h.i.cluster.impl.MulticastJoiner       : [192.168.1.7]:5702 [dev] [5.1.5] Trying to join to discovered node: [192.168.1.7]:5701
+2023-04-04 09:59:29.404  INFO 4668 --- [hz.hazelcast-instance.IO.thread-in-2] c.h.i.server.tcp.TcpServerConnection     : [192.168.1.7]:5701 [dev] [5.1.5] Initialized new cluster connection between /192.168.1.7:5701 and /192.168.1.7:59178
+2023-04-04 09:59:29.408  INFO 12268 --- [hz.hazelcast-instance.IO.thread-in-0] c.h.i.server.tcp.TcpServerConnection     : [192.168.1.7]:5702 [dev] [5.1.5] Initialized new cluster connection between /192.168.1.7:59178 and /192.168.1.7:5701
+2023-04-04 09:59:34.545  INFO 4668 --- [hz.hazelcast-instance.priority-generic-operation.thread-0] c.h.internal.cluster.ClusterService      : [192.168.1.7]:5701 [dev] [5.1.5] 
+
+Members {size:2, ver:4} [
+	Member [192.168.1.7]:5701 - 227905ca-0ea8-4b46-9aa9-0d805076ab08 this
+	Member [192.168.1.7]:5702 - c2dd1c51-6ef3-4d5c-910a-183da0d5ce9f
+]
+
+2023-04-04 09:59:34.573  INFO 12268 --- [hz.hazelcast-instance.priority-generic-operation.thread-0] c.h.internal.cluster.ClusterService      : [192.168.1.7]:5702 [dev] [5.1.5] 
+
+Members {size:2, ver:4} [
+	Member [192.168.1.7]:5701 - 227905ca-0ea8-4b46-9aa9-0d805076ab08
+	Member [192.168.1.7]:5702 - c2dd1c51-6ef3-4d5c-910a-183da0d5ce9f this
+]
+
+2023-04-04 09:59:34.620  INFO 12268 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.7]:5702 [dev] [5.1.5] [192.168.1.7]:5702 is STARTED
+2023-04-04 09:59:34.855  INFO 4668 --- [hz.hazelcast-instance.migration] c.h.i.partition.impl.MigrationManager    : [192.168.1.7]:5701 [dev] [5.1.5] Repartitioning cluster data. Migration tasks count: 271
+2023-04-04 09:59:35.409  INFO 12268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-04 09:59:35.693  INFO 4668 --- [hz.hazelcast-instance.migration] c.h.i.partition.impl.MigrationManager    : [192.168.1.7]:5701 [dev] [5.1.5] All migration tasks have been completed. (repartitionTime=Tue Apr 04 09:59:34 IST 2023, plannedMigrations=271, completedMigrations=271, remainingMigrations=0, totalCompletedMigrations=271)
+2023-04-04 09:59:36.230  INFO 12268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-04 09:59:36.417  INFO 12268 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-04 09:59:36.575  INFO 12268 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-04 09:59:37.045  INFO 12268 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-04 09:59:37.324  INFO 12268 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-04-04 09:59:38.475  INFO 12268 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-04 09:59:41.691  INFO 12268 --- [main] c.p.s.rest.RestApplicationTests          : Started RestApplicationTests in 19.018 seconds (JVM running for 20.969)
+2023-04-04 09:59:42.319  INFO 4668 --- [hz.hazelcast-instance.IO.thread-in-2] c.h.i.server.tcp.TcpServerConnection     : [192.168.1.7]:5701 [dev] [5.1.5] Connection[id=2, /192.168.1.7:5701->/192.168.1.7:59178, qualifier=null, endpoint=[192.168.1.7]:5702, remoteUuid=c2dd1c51-6ef3-4d5c-910a-183da0d5ce9f, alive=false, connectionType=MEMBER, planeIndex=0] closed. Reason: Connection closed by the other side
+2023-04-04 09:59:42.318  INFO 12268 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-04-04 09:59:42.321  INFO 4668 --- [hz.hazelcast-instance.cached.thread-7] c.h.i.server.tcp.TcpServerConnector      : [192.168.1.7]:5701 [dev] [5.1.5] Connecting to /192.168.1.7:5702, timeout: 10000, bind-any: true
+2023-04-04 09:59:42.329  INFO 12268 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-04 09:59:42.335  INFO 12268 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-04 09:59:44.351  INFO 4668 --- [hz.hazelcast-instance.cached.thread-7] c.h.i.server.tcp.TcpServerConnector      : [192.168.1.7]:5701 [dev] [5.1.5] Could not connect to: /192.168.1.7:5702. Reason: IOException[Connection refused: no further information to address /192.168.1.7:5702]
+2023-04-04 09:59:46.570  INFO 4668 --- [hz.hazelcast-instance.cached.thread-7] c.h.i.server.tcp.TcpServerConnector      : [192.168.1.7]:5701 [dev] [5.1.5] Connecting to /192.168.1.7:5702, timeout: 10000, bind-any: true
+2023-04-04 09:59:48.599  INFO 4668 --- [hz.hazelcast-instance.cached.thread-7] c.h.i.server.tcp.TcpServerConnector      : [192.168.1.7]:5701 [dev] [5.1.5] Could not connect to: /192.168.1.7:5702. Reason: IOException[Connection refused: no further information to address /192.168.1.7:5702]
+2023-04-04 09:59:48.709  INFO 4668 --- [hz.hazelcast-instance.cached.thread-7] c.h.i.server.tcp.TcpServerConnector      : [192.168.1.7]:5701 [dev] [5.1.5] Connecting to /192.168.1.7:5702, timeout: 10000, bind-any: true
+2023-04-04 09:59:50.744  INFO 4668 --- [hz.hazelcast-instance.cached.thread-7] c.h.i.server.tcp.TcpServerConnector      : [192.168.1.7]:5701 [dev] [5.1.5] Could not connect to: /192.168.1.7:5702. Reason: IOException[Connection refused: no further information to address /192.168.1.7:5702]
+2023-04-04 09:59:50.745  WARN 4668 --- [hz.hazelcast-instance.cached.thread-7] .h.i.s.t.TcpServerConnectionErrorHandler : [192.168.1.7]:5701 [dev] [5.1.5] Removing connection to endpoint [192.168.1.7]:5702 Cause => java.io.IOException {Connection refused: no further information to address /192.168.1.7:5702}, Error-Count: 5
+2023-04-04 09:59:50.746  INFO 4668 --- [hz.hazelcast-instance.cached.thread-7] c.h.i.cluster.impl.MembershipManager     : [192.168.1.7]:5701 [dev] [5.1.5] Removing Member [192.168.1.7]:5702 - c2dd1c51-6ef3-4d5c-910a-183da0d5ce9f
+2023-04-04 09:59:50.746  INFO 4668 --- [hz.hazelcast-instance.cached.thread-7] c.h.i.p.impl.PartitionStateManager       : [192.168.1.7]:5701 [dev] [5.1.5] Storing snapshot of partition assignments while removing UUID c2dd1c51-6ef3-4d5c-910a-183da0d5ce9f
+2023-04-04 09:59:50.748  INFO 4668 --- [hz.hazelcast-instance.cached.thread-7] c.h.internal.cluster.ClusterService      : [192.168.1.7]:5701 [dev] [5.1.5] 
+
+Members {size:1, ver:5} [
+	Member [192.168.1.7]:5701 - 227905ca-0ea8-4b46-9aa9-0d805076ab08 this
+]
+
+2023-04-04 09:59:50.749  INFO 4668 --- [hz.hazelcast-instance.cached.thread-1] c.h.t.TransactionManagerService          : [192.168.1.7]:5701 [dev] [5.1.5] Committing/rolling-back live transactions of [192.168.1.7]:5702, UUID: c2dd1c51-6ef3-4d5c-910a-183da0d5ce9f
+2023-04-04 09:59:50.771  INFO 4668 --- [hz.hazelcast-instance.migration] c.h.i.partition.impl.MigrationManager    : [192.168.1.7]:5701 [dev] [5.1.5] Partition balance is ok, no need to repartition.
+2023-04-04 10:01:54.869  INFO 4668 --- [hz.ShutdownThread] com.hazelcast.instance.impl.Node         : [192.168.1.7]:5701 [dev] [5.1.5] Running shutdown hook... Current state: ACTIVE
+2023-04-04 10:01:55.060  INFO 4668 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-04-04 10:01:55.069  INFO 4668 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-04 10:01:55.075  INFO 4668 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
